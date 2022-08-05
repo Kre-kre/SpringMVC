@@ -6,7 +6,7 @@
 
 <br>
 
-<a href="${pageContext.request.contextPath}/askDetails">Pleas write your name</a>
+<a href="${pageContext.request.contextPath}/employee/askDetails">Pleas write your name</a>
 </body>
 
 </html>
