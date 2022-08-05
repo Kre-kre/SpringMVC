@@ -11,20 +11,19 @@ import javax.validation.Valid;
 
 
 @Controller
-@RequestMapping("/employee")
 public class MyController {
     @RequestMapping("/")
     public String showFirstView() {
         return "first-view";
     }
 
-    //    @RequestMapping("/askDetails")
+//        @RequestMapping("/askDetails")
 //    public String askEmployeeDetails() {
 //        return "ask-details";
 //    }
     @RequestMapping("/askDetails")
     public String askEmployeeDetails(Model model) {
-        model.addAttribute("employee", new Employee());
+       model.addAttribute("employee", new Employee());
         return "ask-details";
     }
 

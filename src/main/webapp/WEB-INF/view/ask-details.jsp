@@ -23,16 +23,12 @@
     <input type="submit" name="ok">
     <br>
     <br>
-    Foreign language(s):
-    <form:checkboxes path="languages" items="${employee.languages}"/>
+    Foreign language(s)
+
+    <form:checkboxes path="languages" items="${employee.listLanguage}"/>
 
 </form:form>
 
-
-<%--<form action="${pageContext.request.contextPath}/employee/showDetails" method="post">--%>
-<%--    <input type="text" name="employeeName"--%>
-<%--           placeholder="Write your name"/>--%>
-<%--    <input type="submit"/>--%>
-<%--</form>--%>
+</form>
 </body>
 </html>

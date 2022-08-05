@@ -20,6 +20,18 @@ public class Employee {
     private Map<String,String> listLanguage;
 
     public Employee() {
+
+        listLanguage = new HashMap<String, String>();
+        listLanguage.put("Ukraine","UA");
+        listLanguage.put("United States", "USA");
+    }
+
+    public void setLanguages(String[] languages) {
+        this.languages = languages;
+    }
+
+    public void setListLanguage(Map<String, String> listLanguage) {
+        this.listLanguage = listLanguage;
     }
 
     public Employee(String name, String surname, int salary, String department) {
@@ -28,8 +40,10 @@ public class Employee {
         this.salary = salary;
         this.department = department;
 
-        listLanguage = new HashMap<String, String>();
-        listLanguage.put("Ukrain","UA");
+    }
+
+    public Map<String, String> getListLanguage() {
+        return listLanguage;
     }
 
     public String[] getLanguages() {
